@@ -1,0 +1,136 @@
+.flx{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 100px;
+    
+}
+
+.fx{
+    background-color: green ;
+    width: 250px;
+    height: 200px;
+    border-radius: 1px;
+    color: white;
+    font-size: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.f1{
+   
+    position: relative;
+}
+
+.f1:hover{
+    right: 1px;
+    transition: right ease 1s;
+   width: 280px;
+    background-color: red;
+}
+
+.f2{
+    transition: width left 1s;
+}
+
+
+
+.f2:hover{
+    width: 265px;
+    background-color: red;
+}
+
+
+.f3{
+    transition: height  1s;
+}
+
+.f3:hover{
+    transform: skewY();
+   height: 265px;
+    background-color: red;
+}
+
+.f4{
+    transition: height  1s;
+}
+
+.f4:hover{
+   height: 210px;
+    background-color: red;
+}
+
+.f5{
+    transition: transform .2s;
+
+}
+
+.f5:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    background-color: red;
+  }
+
+
+
+  .f6{
+    transition: transform .2s;
+  }
+
+  .f6:hover {
+     width: 255px;
+    
+  }
+
+
+  .f8{
+    animation: width 5s ease infinite;
+    transform: scaleX(50px);
+  
+    /* background-color: brown; */
+}
+@keyframes width {
+    0% {
+        transform: scaleX(0.5);
+    }
+    25% {
+        transform: scaleX(1);
+    }
+   
+}
+
+.f9 {
+   
+    animation: height 4s ease-in-out infinite;
+    transform: scaleY(50px);
+    border: 1px solid black;
+    
+  
+}
+
+@keyframes height {
+    0% {
+        transform: scaleY(0.5);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+  
+}
+
+.f10{
+    transform: rotate(0deg);
+    animation: ring  1s ease-in-out infinite alternate;
+}
+@keyframes ring{
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
