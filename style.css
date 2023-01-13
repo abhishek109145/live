@@ -19,49 +19,58 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
 .f1{
    
     position: relative;
+    top:0;
+    transition: right 10s ease 0.10s;
 }
 
 .f1:hover{
-    right: 1px;
-    transition: right ease 1s;
-   width: 280px;
+    right: -10px;
+   
     background-color: red;
 }
 
 .f2{
-    transition: width left 1s;
+   
+    position: relative;
+    top:0;
+    transition: left 10s ease 0.10s;
 }
 
-
-
 .f2:hover{
-    width: 265px;
+    right: 10px;
+   
     background-color: red;
 }
 
-
 .f3{
-    transition: height  1s;
+   
+    position: relative;
+    top:20;
+    transition: top 10s ease 0.10s;
 }
 
 .f3:hover{
-    transform: skewY();
-   height: 265px;
+   top: -30px;
+   
     background-color: red;
 }
 
 .f4{
-    transition: height  1s;
+    position: relative;
+    bottom:20;
+    transition: top 10s ease 0.10s;
 }
 
 .f4:hover{
-   height: 210px;
+    top: 30px;
+   
     background-color: red;
 }
 
@@ -80,57 +89,46 @@
 
 
   .f6{
-    transition: transform .2s;
+    transition: transform 2s;
   }
 
   .f6:hover {
-     width: 255px;
-    
+     transform: scale(-1.5);
+     background-color: red;
   }
+.f7{
+    transition:  2s;
+}
 
+.f7:hover{
+    border-radius: 70%;
+    background-color: red;
+}
 
   .f8{
-    animation: width 5s ease infinite;
-    transform: scaleX(50px);
-  
-    /* background-color: brown; */
-}
-@keyframes width {
-    0% {
-        transform: scaleX(0.5);
-    }
-    25% {
-        transform: scaleX(1);
-    }
-   
+    transition: width 2s
 }
 
-.f9 {
-   
-    animation: height 4s ease-in-out infinite;
-    transform: scaleY(50px);
-    border: 1px solid black;
-    
-  
+.f8:hover{
+    width: 300px;
+    background-color: red;
 }
 
-@keyframes height {
-    0% {
-        transform: scaleY(0.5);
-    }
-    25% {
-        transform: scaleY(1);
-    }
+.f9{
+   
+    transition:height 2s;
+}
+
+.f9:hover{
   
+    height:350px ;
+    background-color: red;
 }
 
 .f10{
-    transform: rotate(0deg);
-    animation: ring  1s ease-in-out infinite alternate;
+    transition: 2s;
 }
-@keyframes ring{
-    100%{
-        transform: rotate(40deg);
-    }
+.f10:hover{
+    transform: rotate(20deg);
+    background-color: red;
 }
-
